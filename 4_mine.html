@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction App</title>
+  <link rel="stylesheet" href="4mines.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+</head>
+<body>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <div class="popup-text">
+				<p class="warning"> WARNING !! </p><br>
+          <p><b>THIS APP WILL WORK ONLY </p>
+					<p>IN NEW ACCOUNT SO CLICK ON</p> <p><u>"REGISTER"</u></p> AND MAKE YOUR ACCOUNT NOW<b></p>
+          <button id="popupRegisterButton">REGISTER</button>
+          <button id="closePopupButton">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+	
+	<div class="info-box">
+      <img src="C:\Users\Pranjul Rai\java script\mines\Stake-Logo.jpg" alt="Logo" class="info-logo">
+      <div class="info-text">
+        <p>This app is for fun and earn.</p>
+        <p>Gambling is fun so don't get addicted.</p>
+        <p>This mod shows 90% accuracy.</p>
+      </div>
+    </div>
+    
+    <section id="clientSeedSection">
+      <input type="text" id="clientSeed" placeholder="Enter client seed">
+    </section>
+
+    <div class="grid-container" id="gridContainer">
+      <!-- Grid will be generated here -->
+      <img src="C:\Users\Pranjul Rai\mine.2x new\mine.2x\mines\mine.png" alt="Mine Image">
+    </div>
+    
+    <div class="footer">
+      <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+      <p id="timer"></p>
+      <button id="playButton" onclick="play()">Play</button>
+    </div>
+  </div>
+
+  <script src="4mines.js"></script>
+</body>
+</html>

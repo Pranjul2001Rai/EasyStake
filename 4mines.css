@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Main background black */
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  .info-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .info-text {
+    text-align: left;
+  }
+  
+  .info-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  #topSection {
+    margin-bottom: 20px;
+  }
+  
+  #clientSeedSection {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 8px 80px; /* Increased width */
+    background-color: #28a745;
+    color: white;
+    border: none;
+      border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  input {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+  
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 52px);
+    grid-template-rows: repeat(5, 52px); /* Make rows same height as columns */
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .grid-block {
+    width: 55px;
+    height: 55px;
+    background-color: #333; /* Dark gray color for grid */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .grid-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the block */
+    border-radius: 10px; /* Match the block's rounded corners */
+  }
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .popup-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-text {
+    text-align: center;
+  }
+  
+  .popup-text .warning {
+    color: red; /* Change color of the paragraph with class "warning" */
+  }
+  
+  .popup-text p {
+    margin: 0 0 10px 0;
+  }
+  
+  .popup-text button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .popup-text button:hover {
+    background-color: #218838;
+  }
+  
+  #timer {
+    color: #90EE90; /* Light green color for connected message */
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid white;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  

@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1014;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #121318;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container1 {
+    text-align: center;
+    background-color: #0fe891;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.info-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+.info-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .info-text {
+    text-align: left;
+  }
+  
+  .info-text p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 14px;
+    background: linear-gradient(to right, red 0%, red 50%, green 50%, green 100%);
+    outline: none;
+    border-radius: 7px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    transition: background 0.15s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #3E5F8A;
+    border: 4px solid #97b8d9;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: #3E5F8A;
+    border: 4px solid #97b8d9;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0fbb20;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}

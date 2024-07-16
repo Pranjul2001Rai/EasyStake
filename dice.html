@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake Dice Game with Slider</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+  <div class="container1">
+	
+	<div class="info-box">
+      <img src="C:\Users\Pranjul Rai\java script\mines\Stake-Logo.jpg" alt="Logo" class="info-logo">
+      <div class="info-text">
+        <p>This app is for fun and earn.</p>
+        <p>Gambling is fun so don't get addicted.</p>
+        <p>This mod shows 90% accuracy.</p>
+      </div>
+    </div>
+    <div class="container">
+      
+        <h1>Stake Dice Game</h1>
+        <div class="game">
+            <div class="slider-container">
+                <input type="range" min="0" max="100" value="50" class="slider" id="predictionSlider">
+                <div class="slider-labels">
+                    <span>0</span>
+                    <span>25</span>
+                    <span>50</span>
+                    <span>75</span>
+                    <span>100</span>
+                </div>
+            </div>
+            <input type="text" id="clientSeed" placeholder="Enter client seed">
+            <button onclick="playGame()">Play</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="dice.js"></script>
+</body>
+</html>
